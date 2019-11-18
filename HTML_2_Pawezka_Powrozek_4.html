@@ -1,0 +1,142 @@
+<!DOCTYPE HTML>
+<html lang="pl">
+
+<head>
+	<meta charset="utf-8"/>
+	<title>Łukasz Pawęzka i Kacper Powrózek - HTML2</title>
+	<meta name = "description" content="Zadanie nr. 2 - HTML2"/>
+	<meta name="keywords" content="HTML2, LAB, ZADANIE"/>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+
+	<script type="text/javascript" src="js_str1.js"></script>
+</head> 
+
+ <body>
+	<header>
+		<h1>Łukasz Pawęzka i Kacper Powrózek - HTML2</h1>
+	</header>
+	
+	<nav>
+		<h2>Menu główne</h2>
+		<ul>
+			<li><a href="#wiersz">Najpiękniejszy wiersz o serniku</a></li>
+			<li><a href="HTML_2_Pawezka_Powrozek_1.html" title="Strona główna"> Strona główna</a></li>
+			<li><a href="HTML_2_Pawezka_Powrozek_2.html" title="Struktury strony">Struktury strony</a></li>
+			<li><a href="HTML_2_Pawezka_Powrozek_3.html" title="Formularz 1">Formularz 1</a></li>
+			<li><a href="HTML_2_Pawezka_Powrozek_4.html" title="Formularz 2">Formularz 2</a></li>
+		</ul>
+	</nav>
+	
+	<article>
+		
+		<h3> Wyszukaj: </h3>
+		<form autocomplete="on">
+			<div style="clear: both">
+				<input type="search" placeholder="Wyszukaj fraze"> <input type = "submit" value = "Submit"> <br><br>
+			</div>
+		</form>
+		
+		<h3>Formularz sernikowy vol.2</h3>
+		
+		
+		<form autocomplete="on">
+			<div style="clear: both">
+				<input type="color" name= "ulubionyKolorSernika"> Wybierz kolor swojego serniczka <br>
+				<input type="month" id="start" name="start"> Kiedy chcesz piec serniczek? <br>
+				0 <input type="range" name= "stopienWypieczenia" min="0" max="10"> 10 Jak mocno chcesz przypiec sernik w skali od 0 do 10? <br>
+				<input type="url" name="homepage" placeholder="Dodaj swoją stronę o serniku"> <br>
+			</div>
+
+			<div>
+				<input type="reset" value="Wyczyść formularz">
+				<input type="submit" value="Wyślij formularz">
+			</div>
+		</form>
+
+	</article><br/><br/>
+
+	<img src ="img/sernikDOM1.jpg" alt="sernik1" id="serniczek1" name="serniczekDOM" onmousemove="pokazWsp(event)">
+	<img src ="img/sernikDOM2.jpg" alt="sernik2" id="serniczek2">
+	<img src ="img/sernikDOM3.jpg" alt="sernik3" id="serniczek3"> <br/>
+
+	<p><b>Chcesz wiedzieć ile jest zdjeć pysznych serniczków na tej stronie?</b></p>
+	<button onclick="imgFunct()">Kliknij mnie!</button>
+	<div id="wynik1"></div>
+
+	<p><b>Chcesz wiedzieć ile jest linków do serniczków na tej stronie?</b></p>
+	<button onclick="hrefFunct()">Kliknij mnie!</button>
+	<div id="wynik2"></div>
+
+	<p><b>Chcesz wiedzieć ile jest sernikowych formularzy na tej stronie?</b></p>
+	<button onclick="formFunct()">Kliknij mnie!</button>
+	<div id="wynik3"></div>
+
+	<p><b>Chcesz wiedzieć ile jest sernikowych zakotwiczen znacznikow 'a' na tej stronie?</b></p>
+	<button onclick="anchFunct()">Kliknij mnie!</button>
+	<div id="wynik4"></div>
+
+	<p><b>Przenieś tutaj serniczki:</b></p>
+	<button onclick="itemFunct()">Kliknij mnie!</button>
+	<div id="wynik5"></div>
+
+	<p><b>Ale ten najładniejszy serniczek ma byc tutaj:</b></p>
+	<button onclick="item2Funct()">Kliknij mnie!</button>
+	<div id="wynik6"></div><br/>
+
+	<p onmousedown="czyAlt(event)"><b>KLIKNIJ TUTAJ Z WCISNIETYM KLAWISZEM ALT</b></p>
+	<div id="wynik7"></div><br/>
+
+	<p onmousedown="czyCtr(event)"><b>KLIKNIJ TUTAJ Z WCISNIETYM KLAWISZEM CTRL</b></p>
+	<div id="wynik8"></div><br/>
+
+	<p onmousedown="czyShift(event)"><b>KLIKNIJ TUTAJ Z WCISNIETYM KLAWISZEM SHIFT</b></p>
+	<div id="wynik9"></div><br/>
+
+	<input type="text" size="40" maxlength="0" onkeypress="jakiKod(event)">
+	<div id="wynik10"></div>
+
+	<p><b>Kliknij w zdjc najlepszego serniczka aby wyswietlic wspolrzedne klikniecia</b></p>
+	<div id="wynik11"></div>
+
+	<p><b>Kliknij w wiersz aby wyswietlic wspolrzedne kliknieca</b></p>
+	<div id="wynik12"></div>
+
+	<a name="wiersz" id="wiersz"  onclick="pokazWsp2(event)" onmousedown="wcisniecieMyszki()" onmouseup="puszczenieMyszki()">
+		<p><i>"Sernik z brzoskwiniami na kruchutkim cieście <br/>
+			to jest niebo w gębie, pychota, uwierzcie ! <br/>
+			Nieważne kalorie, oraz wzdęcie brzucha <br/>
+			kiedy na słodkości panuje posucha. <br/><br/>
+
+			Dwie cycate kule z ciasta ulepiłem<br/>
+			i seksi spiczaste sutki doprawiłem.<br/>
+			Do zamrażalnika, by mocno stężały<br/>
+			i podczas ścierania tarki nie sklejały.<br/><br/>
+
+			Z bezą sernik dobry, więc by pianę ubić<br/>
+			trzeba ból w nadgarstku koniecznie polubić.<br/>
+			Już piana jest gęsta, z miski nie wycieka<br/>
+			i na swoje miejsce na serniku czeka.<br/><br/>
+
+			Teraz masa z sera, oraz ingrediencje,<br/>
+			które po zjedzeniu wzmocnią nam potencje,<br/>
+			zapachem wanilii głodomora skuszą,<br/>
+			a łakomstwo nasze do łez samych wzruszą.<br/><br/>
+
+			Na spód blachy ciasto tarką gęsto ścieram,<br/>
+			na to masę z sera równo rozpościeram,<br/>
+			kładę z brzoskwiń plastry i bezą przykrywam.<br/>
+			Startą kulą z ciasta wszystko to okrywam.<br/><br/>
+
+			I do piekarnika ! I niech tam się piecze !<br/>
+			I niech no mi z blachy tylko nie uciecze !<br/>
+			I niechaj nie rosną garby jak wielbłądzie,<br/>
+			a kiedy wystygnie niechaj mi nie siądzie."</i><br/><br/>
+		</p>
+	</a>
+
+	<footer>
+		<p> Autorzy: <em>Łukasz Pawęzka</em> oraz <em>Kacper Powrózek</em>. Wszelkie prawa zastrzerzone &copy;</p>
+	</footer>
+</body>
+	 
+</html>
