@@ -1,0 +1,102 @@
+<!DOCTYPE HTML>
+<html lang="pl">
+
+<head>
+	<meta charset="utf-8"/>
+	<title>Łukasz Pawęzka i Kacper Powrózek - HTML2</title>
+	<meta name = "description" content="Zadanie nr. 2 - HTML2"/>
+	<meta name="keywords" content="HTML2, LAB, ZADANIE"/>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+	<link rel="stylesheet" type="text/css" href="main.css">
+	<script type="text/javascript" src="js_1_3.js"></script>
+</head>
+
+ <body>
+	<header>
+		<h1>Łukasz Pawęzka i Kacper Powrózek - HTML2</h1>
+	</header>
+	
+	<nav>
+		<h2>Menu główne</h2>
+		<ul id="navigation">
+			<li><a href="HTML_2_Pawezka_Powrozek_1.html" title="Strona główna"> Strona główna</a></li>
+			<li><a href="HTML_2_Pawezka_Powrozek_2.html" title="Struktury strony">Struktury strony</a></li>
+			<li><a href="HTML_2_Pawezka_Powrozek_3.html" title="Formularz 1">Formularz 1</a></li>
+			<li><a href="HTML_2_Pawezka_Powrozek_4.html" title="Formularz 2">Formularz 2</a></li>
+		</ul>
+	</nav>
+
+	<button onclick="create_append_to_nav()">create_append</button>
+	<button onclick="insert_to_nav()">insert</button>
+	<button onclick="replace_in_nav()">replace</button>
+	<button onclick="remove_from_nav()">remove</button>
+	<button onclick="parent_node()">parent_node</button>
+	<br/><br/>
+	<select id="select_bg_color">
+		<option value="white">White</option>
+		<option value="lightblue">Lightblue</option>
+		<option value="tomato">Lightred</option>
+	</select>
+	<button onclick="change_background_color()">Change background color</button>
+	<br/><br/>
+	<select id="select_txt_color">
+		<option value="black">Black</option>
+		<option value="lightblue">Lightblue</option>
+		<option value="tomato">Lightred</option>
+	</select>
+	<button onclick="change_text_color()">Change text colot</button>
+	<br/><br/>
+	<select id="select_font_family">
+		<option value="Times New Roman">Times New Roman</option>
+		<option value="Verdana">Verdana</option>
+		<option value="Helvetica">Helvetica</option>
+	</select>
+	<button onclick="change_font_family()">Change font family</button>
+
+	<article>
+		<h3>Formularz sernikowy</h3>
+
+
+		<form autocomplete="on">
+			<div style="clear: both">
+				<input type="text" name="name" autofocus> Podaj swoje imie np. Łukasz <br>
+				<input type="text" name="surnname"  required> Podaj swoje nazwisko np. Pawęzka <br>
+				<input list="list3" name="birthMonth"> Wybierz miesiac urodzenia
+				<datalist id="list3">
+						<option value="Styczeń">
+						<option value="Luty">
+						<option value="Marzec">
+						<option value="Kwiecień">
+						<option value="Maj">
+						<option value="Czerwiec">
+						<option value="Lipiec">
+						<option value="Sierpień">
+						<option value="Wrzesień">
+						<option value="Październik">
+						<option value="Listopad">
+						<option value="Grudzień">
+				</datalist> <br>
+				<input type = "email" name="e-mail" required /> Podaj swój email według wzoru: name@domain.com <br>
+				<input type = "text" pattern="^[0-9]{3}-[0-9]{3}-[0-9]{3}$" required /> Podaj swój telefon według wzoru: 123-456-789 <br>
+				<textarea maxlength="200" rows="3" cols="70" ></textarea>
+			</div>
+
+			<div id="div_buttons">
+				<input id="form_clear" type="reset" value="Wyczyść formularz">
+				<input type="submit" value="Wyślij formularz">
+			</div>
+			<div class="couponcode">Help
+				<span class="coupontooltip">Serniczki są super, wypełnij formularz</span> <!-- UPDATED -->
+			</div>
+
+		</form>
+			
+	</article>
+	
+	
+	<footer>
+		<p> Autorzy: <em>Łukasz Pawęzka</em> oraz <em>Kacper Powrózek</em>. Wszelkie prawa zastrzerzone &copy; </p>
+	</footer>
+</body>
+	 
+</html>
